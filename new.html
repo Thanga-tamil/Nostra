@@ -1,0 +1,19 @@
+<img src="trending-topic.png" id="img" >
+
+<script>
+    var like=false
+    document.getElementById("img").addEventListener("click",
+    function(e){
+        if(like)
+        {
+            e.target.src="trending-topic.png"
+            like=false
+            
+        }
+        else{
+            e.target.src="heart.png"
+            like=true
+        }
+    })
+</script>
+
